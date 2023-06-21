@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="view.com.company.PanelAsignaturas">
+  <scrollpane id="43cd7">
+    <constraints>
+      <xy x="16" y="27" width="1236" height="684"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="27dc6" binding="panelAsignatura" layout-manager="GridLayoutManager" row-count="9" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints/>
+        <properties>
+          <background color="-7499888"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="af865" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="382" height="16"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value="Busqueda por nombre o Id"/>
+            </properties>
+          </component>
+          <component id="4190" class="javax.swing.JTextField" binding="busqueda" default-binding="true">
+            <constraints>
+              <grid row="1" column="4" row-span="2" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="382" height="30"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <scrollpane id="9e0a7">
+            <constraints>
+              <grid row="6" column="1" row-span="1" col-span="5" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <horizontalScrollBarPolicy value="30"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="3edad" class="javax.swing.JTable" binding="tablaAsig" default-binding="true">
+                <constraints/>
+                <properties>
+                  <toolTipText value=""/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+          <hspacer id="c1bfe">
+            <constraints>
+              <grid row="6" column="6" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <component id="2f141" class="javax.swing.JButton" binding="buscarAsigButton">
+            <constraints>
+              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="2"/>
+              <icon value="Imagenes/lupa.png"/>
+              <text value="Busqueda por nombre"/>
+              <toolTipText value="Rellene el campo con alguna palabra de lo que quiere buscar y presione"/>
+            </properties>
+          </component>
+          <component id="b5945" class="javax.swing.JButton" binding="busquedaIdAsigButton">
+            <constraints>
+              <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="2"/>
+              <icon value="Imagenes/lupa.png"/>
+              <text value="Busqueda por Id"/>
+              <toolTipText value="Rellene el campo con el número del id y presione"/>
+            </properties>
+          </component>
+          <component id="f8bf2" class="javax.swing.JButton" binding="asignaturasButton" default-binding="true">
+            <constraints>
+              <grid row="5" column="4" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Asignaturas"/>
+            </properties>
+          </component>
+          <vspacer id="3c303">
+            <constraints>
+              <grid row="3" column="4" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <hspacer id="8a50f">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <grid id="ab9bf" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-11964526"/>
+            </properties>
+            <border type="line" title="Acciones" title-justification="2">
+              <color color="-10982039"/>
+            </border>
+            <children>
+              <component id="12880" class="javax.swing.JButton" binding="buttonEliminar">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <icon value="Imagenes/signoMenos.png"/>
+                  <text value="Eliminar Asignatura"/>
+                </properties>
+              </component>
+              <component id="68f8d" class="javax.swing.JButton" binding="buttonAgreAsig">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <icon value="Imagenes/signoMas.png"/>
+                  <text value="Agregar Asignatura"/>
+                  <visible value="true"/>
+                </properties>
+              </component>
+              <component id="2b2bc" class="javax.swing.JButton" binding="buttonModificar">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <icon value="Imagenes/modificar.png"/>
+                  <text value="Modificar Asignatura"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <component id="5f230" class="javax.swing.JTextField" binding="textoBorrarAsig">
+            <constraints>
+              <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="1e62a" class="javax.swing.JButton" binding="buttonConfirmarBorrado">
+            <constraints>
+              <grid row="4" column="2" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Confirmar"/>
+              <toolTipText value="Presione para confirmar el borrado"/>
+            </properties>
+          </component>
+          <component id="f6c11" class="javax.swing.JLabel" binding="fieldBorrar">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Introduzca el Id de la asignatura"/>
+            </properties>
+          </component>
+          <hspacer id="4ee13">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <hspacer id="80809">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <hspacer id="3e1df">
+            <constraints>
+              <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <component id="cde1b" class="javax.swing.JButton" binding="buttonVolver">
+            <constraints>
+              <grid row="7" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Volver "/>
+            </properties>
+          </component>
+          <vspacer id="17863">
+            <constraints>
+              <grid row="8" column="5" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <component id="fef8f" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="7" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Volver a ventana principal"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </scrollpane>
+</form>
